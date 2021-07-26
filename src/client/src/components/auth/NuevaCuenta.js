@@ -12,8 +12,9 @@ const NuevaCuenta = () => {
     descripcion:"",
     telefono:"",
     foto:"",
+    direccion:"",
   });
-  const { restaurante,email, password,confirmar,descripcion,telefono,foto } = usuario;
+  const { restaurante,email, password,confirmar,descripcion,telefono,foto ,direccion} = usuario;
 
   const onChange = (e) => {
     guardarUsuario({
@@ -62,6 +63,22 @@ const NuevaCuenta = () => {
                 name="restaurante"
                 placeholder="Ej. Chifa Pollería Maná"
                 value={restaurante}
+                onChange={onChange}
+                className="bg-transparent outline-none  w-screen "
+              />
+            </div>
+
+            <div className="flex mx-2  space-x-4 shadow-abajo my-1 py-1">
+              <label htmlFor="email" className="text-yellow-500">
+                Dirección
+              </label>
+
+              <input
+                type="text"
+                id="direccion"
+                name="direccion"
+                placeholder="Jr Carlos Mariategui 231"
+                value={direccion}
                 onChange={onChange}
                 className="bg-transparent outline-none  w-screen "
               />
@@ -182,7 +199,7 @@ const NuevaCuenta = () => {
              
              "
           >
-            Aún no tienes una cuenta? Consíguela ahora
+            Iniciar Sesion
           </Link>
         </div>
       </div>

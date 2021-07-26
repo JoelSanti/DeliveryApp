@@ -20,6 +20,10 @@
   "homepage": "https://github.com/58pier/DeliveryApp#readme",
   "dependencies": {
     "@babel/node": "^7.14.7",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "bcrypt-nodejs": "^0.0.3",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "core-js": "^3.15.2",
